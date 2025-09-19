@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋のファッション診断</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- スタート画面 -->
+    <div id="start-screen" class="screen active">
+        <div class="container">
+            <header>
+                <h1 class="main-title">秋のファッション診断</h1>
+                <p class="subtitle">あなたに似合う秋のスタイルを見つけましょう</p>
+            </header>
+            <div class="start-content">
+                <p class="description">
+                    10個の質問に答えて<br>あなたにぴったりの秋のファッションタイプを診断します<br>
+                    4つのスタイルから<br>あなたの個性を活かすファッションをご提案いたします
+                </p>
+                <button id="start-btn" class="btn btn-primary">診断をはじめる</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 質問画面 -->
+    <div id="question-screen" class="screen">
+        <div class="container">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="question-counter">
+                <span id="current-question">1</span> / <span id="total-questions">10</span>
+            </div>
+            
+            <div class="question-container">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="answers-container" class="answers-container">
+                    <!-- 動的に選択肢が挿入される -->
+                </div>
+                <button id="next-btn" class="btn btn-secondary" disabled>次へ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 結果画面 -->
+    <div id="result-screen" class="screen">
+        <div class="container">
+            <header class="result-header">
+                <h1 class="result-title">診断結果</h1>
+                <div id="result-type" class="result-type"></div>
+                <div id="result-image" class="result-image"></div>
+            </header>
+            
+            <div class="result-content">
+                <div class="result-section">
+                    <h3>あなたのスタイル</h3>
+                    <p id="result-description" class="result-description"></p>
+                </div>
+                
+                <div class="result-section">
+                    <h3>おすすめアイテム</h3>
+                    <ul id="result-items" class="result-list"></ul>
+                </div>
+                
+                <div class="result-section">
+                    <h3>おすすめカラー</h3>
+                    <div id="result-colors" class="color-palette"></div>
+                </div>
+                
+                <div class="result-section">
+                    <h3>おすすめコスメ</h3>
+                    <p id="result-cosmetics" class="result-cosmetics"></p>
+                </div>
+            </div>
+            
+            <div class="result-actions">
+                <button id="restart-btn" class="btn btn-outline">もう一度診断する</button>
+                <button id="share-btn" class="btn btn-primary">𝕏で結果をシェア</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ローディング画面 -->
+    <div id="loading-screen" class="screen">
+        <div class="container">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">診断中...</p>
+                <p class="loading-subtext">あなたにぴったりのスタイルを見つけています</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="simple-test.js"></script>
+</body>
+</html>
