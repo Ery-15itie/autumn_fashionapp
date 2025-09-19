@@ -396,7 +396,7 @@ function typewriterEffect(element, text) {
         if (i >= text.length) {
             clearInterval(typeInterval);
         }
-    }, 60);
+    }, 100);
 }
 
 // ===== 回答選択 =====
