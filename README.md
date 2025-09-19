@@ -1,7 +1,7 @@
 # 🍁秋のファッション診断🍁
 
 ミニアプリweek2025のための制作です。
-アプリはこちらから
+[アプリはこちらから](https://ery-15itie.github.io/autumn_fashionapp/)
 
 HTML/CSS/JSのみ、画像挿入はなしという縛りで短期実装をしました。
 
