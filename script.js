@@ -34,7 +34,7 @@ const questions = [
         id: 4,
         text: "休日のランチ、誰かと行くならどんなお店？",
         answers: [
-            { text: "落ち着い雰囲気の隠れ家カフェやレストラン", type: "urban" },
+            { text: "落ち着いた雰囲気の隠れ家カフェやレストラン", type: "urban" },
             { text: "アットホームな雰囲気の食堂", type: "bohemian" },
             { text: "カジュアルなファストフード店", type: "casual" },
             { text: "秋の味覚たっぷりの和食屋", type: "feminine" }
