@@ -96,7 +96,7 @@ const questions = [
         answers: [
             { text: "品と華やかさを両立させていたい", type: "urban" },
             { text: "好きなものを自由に組み合わせて楽しみたい", type: "bohemian" },
-            { text: "居心地の良さと、自分に似合うスタイルを追求したい", type: "casual" },
+            { text: "着心地の良さと、自分に似合うスタイルを追求したい", type: "casual" },
             { text: "流行を取り入れつつ、自分らしさを大切にしたい", type: "feminine" }
         ]
     }
